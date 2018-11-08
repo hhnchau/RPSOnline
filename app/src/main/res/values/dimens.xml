@@ -1,0 +1,227 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="bage_width">20dp</dimen>
+    <dimen name="bage_height">20dp</dimen>
+
+    <dimen name="robbin_width_1">1dp</dimen>
+    <dimen name="robbin_height_117">117dp</dimen>
+
+    <dimen name="height_progressbar_30">30dp</dimen>
+    <dimen name="progressbar_text_24">24sp</dimen>
+    <dimen name="splash_text_24">24sp</dimen>
+
+    <dimen name="radius_16">16dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+
+    <!--REGISTER-->
+    <dimen name="register_margin_64">64dp</dimen>
+    <dimen name="register_margin_8">8dp</dimen>
+    <dimen name="register_margin_16">16dp</dimen>
+    <dimen name="register_margin_32">32dp</dimen>
+    <dimen name="register_edt_width_252">252dp</dimen>
+    <dimen name="register_edt_height_42">42dp</dimen>
+    <dimen name="register_button_close_width_32">32dp</dimen>
+    <dimen name="register_button_close_height_32">32dp</dimen>
+    <dimen name="register_avatar_width_100">100dp</dimen>
+    <dimen name="register_avatar_height_100">100dp</dimen>
+    <dimen name="register_button_width_252">252dp</dimen>
+    <dimen name="register_button_height_42">4dp</dimen>
+    <dimen name="register_text_20">20sp</dimen>
+    <!--=========================================================================-->
+    <!--TAB-->
+    <dimen name="tab_strip_82">82dp</dimen>
+    <dimen name="tab_margin_32">32dp</dimen>
+    <dimen name="tab_margin_8">8dp</dimen>
+    <dimen name="tab_img_width_62">62dp</dimen>
+    <dimen name="tab_img_height_62">62dp</dimen>
+    <dimen name="tab_text_12">12sp</dimen>
+    <!--====================================================================-->
+    <!--HEADER LISTVIEW-->
+    <dimen name="header_margin_8">8dp</dimen>
+    <dimen name="header_btn_width_80">80dp</dimen>
+    <dimen name="header_btn_height_50">50dp</dimen>
+    <dimen name="header_text_28">28sp</dimen>
+    <!--====================================================================-->
+    <!--NOTIFY-->
+    <dimen name="notify_margin_16">16dp</dimen>
+    <dimen name="notify_margin_64">64dp</dimen>
+    <dimen name="notify_margin_distance_32">32dp</dimen>
+    <dimen name="notify_height_200">200dp</dimen>
+    <dimen name="notify_button_width_80">80dp</dimen>
+    <dimen name="notify_button_height_40">40dp</dimen>
+    <dimen name="notify_text_24">24sp</dimen>
+    <dimen name="notify_text_44">44sp</dimen>
+    <!--==============================================================-->
+
+    <!--Menu STAR LIFE-->
+    <dimen name="menu_margin_8">8dp</dimen>
+    <dimen name="menu_margin_24">24dp</dimen>
+    <dimen name="menu_text_28">28sp</dimen>
+    <dimen name="menu_icon_width_200">200dp</dimen>
+    <dimen name="menu_icon_height_72">72dp</dimen>
+    <dimen name="menu_text_width_80">80dp</dimen>
+    <dimen name="menu_text_height_28">28dp</dimen>
+    <dimen name="menu_button_add_life_width_40">40dp</dimen>
+    <dimen name="menu_button_add_life_height_40">40dp</dimen>
+    <!--=======================================================-->
+    <!--MAIN MENU-->
+    <dimen name="main_menu_margin_10">10dp</dimen>
+    <dimen name="main_menu_margin_bottom_25">25dp</dimen>
+    <dimen name="main_menu_margin_64">64dp</dimen>
+    <dimen name="main_menu_height_textview_300">300dp</dimen>
+    <dimen name="main_menu_button_width_200">200dp</dimen>
+    <dimen name="main_menu_button_height_40">40dp</dimen>
+    <dimen name="main_menu_button_close_width_80">80dp</dimen>
+    <dimen name="main_menu_button_close_height_40">40dp</dimen>
+    <dimen name="main_menu_text_36">36sp</dimen>
+    <dimen name="main_menu_text_28">28sp</dimen>
+    <!--=============================================================-->
+    <!--FRAGMENT 1-->
+    <dimen name="frg1_margin_bottom_2">2dp</dimen>
+    <dimen name="frg1_margin_4">4dp</dimen>
+    <dimen name="frg1_btn_input_global_margin_48">48dp</dimen>
+    <dimen name="frg1_btn_input_global_width_80">80dp</dimen>
+    <dimen name="frg1_btn_input_global__height_40">40dp</dimen>
+    <dimen name="frg1_margin_bottom_10">10dp</dimen>
+    <dimen name="frg1_distance_row_chat_32">32dp</dimen>
+    <dimen name="frg1_margin_64">64dp</dimen>
+    <dimen name="frg1_row_chat_350">350dp</dimen>
+    <dimen name="frg1_btn_send_width_40">40dp</dimen>
+    <dimen name="frg1_btn_send_height_40">40dp</dimen>
+    <dimen name="frg1_text_24">24sp</dimen>
+    <dimen name="frg1_text_18">18sp</dimen>
+    <!--=============================================================-->
+    <!--FRAGMENT 2-->
+    <dimen name="frg2_margin_8">8dp</dimen>
+    <dimen name="frg2_margin_64">64dp</dimen>
+    <dimen name="frg2_position_width_70">70dp</dimen>
+    <dimen name="frg2_position_height_50">50dp</dimen>
+    <dimen name="frg2_text_star_width_60">60dp</dimen>
+    <dimen name="frg2_text_star_height_50">50dp</dimen>
+    <dimen name="frg2_img_star_width_50">50dp</dimen>
+    <dimen name="frg2_img_star_height_50">50dp</dimen>
+    <dimen name="frg2_text_32">32sp</dimen>
+    <dimen name="frg2_text_24">24sp</dimen>
+    <!--==============================================================-->
+    <!--FRAGMENT 3-->
+    <dimen name="frg3_margin_2">2dp</dimen>
+    <dimen name="frg3_margin_4">4dp</dimen>
+    <dimen name="frg3_margin_16">16dp</dimen>
+    <dimen name="frg3_margin_32">32dp</dimen>
+    <dimen name="frg3_margin_robbin_to_text_32">32dp</dimen>
+    <dimen name="frg3_margin_48">45dp</dimen>   //distance robbin to text
+    <dimen name="frg3_margin_main_64">64dp</dimen>  //margin 2 side
+    <dimen name="frg3_text_distance_star_80">80dp</dimen>   //distance text star
+    <dimen name="frg3_margin_bottom_robbin_20">20dp</dimen>
+    <dimen name="frg3_icon_width_40">40dp</dimen>     //icon
+    <dimen name="frg3_icon_height_40">40dp</dimen>
+    <dimen name="frg3_text_profile_width_200">200dp</dimen>   //width text
+    <dimen name="frg3_text_profile_height_40">40dp</dimen>
+    <dimen name="frg3_panel_profile_width_1">1dp</dimen>
+    <dimen name="frg3_panel_profile_height_600">600dp</dimen>
+    <dimen name="frg3_button_battle_width_300">300dp</dimen>   //button fight
+    <dimen name="frg3_button_battle_height_100">100dp</dimen>
+    <dimen name="frg3_icon_star_width_50">50dp</dimen>   //star maiin
+    <dimen name="frg3_icon_star_height_50">50dp</dimen>
+    <dimen name="frg3_img_position_width_100">100dp</dimen>
+    <dimen name="frg3_img_position_height_100">100dp</dimen>
+    <dimen name="frg3_text_24">24sp</dimen>
+    <dimen name="frg3_text_28">28sp</dimen>
+    <dimen name="frg3_text_36">36sp</dimen>
+    <dimen name="frg3_text_40">40sp</dimen>
+    <!--=============================================================-->
+    <!--FRAGMENT 4-->
+    <dimen name="frg4_margin_2">2dp</dimen>
+    <dimen name="frg4_margin_top_30">30dp</dimen>
+    <dimen name="frg4_life_width_40">40dp</dimen>
+    <dimen name="frg4_life_height_40">40dp</dimen>
+    <dimen name="frg4_button_start_width_300">300dp</dimen>
+    <dimen name="frg4_button_start_height_100">100dp</dimen>
+    <dimen name="wheel_width_500">500dp</dimen>
+    <dimen name="wheel_height_500">500dp</dimen>
+    <dimen name="wheels_width_32">32dp</dimen>     //kim
+    <dimen name="wheels_height_47">47dp</dimen>
+    <dimen name="frg4_text_32">32sp</dimen>
+    <dimen name="frg4_text_36">36sp</dimen>
+    <dimen name="frg4_text_46">46sp</dimen>
+    <!--====================================================================-->
+    <!--FRAGMENT 5-->
+    <dimen name="frg5_margin_8">8dp</dimen>
+    <dimen name="frg5_margin_16">16dp</dimen>
+    <dimen name="frg5_margin_left_20">20dp</dimen>
+    <dimen name="frg5_margin_64">64dp</dimen>
+    <dimen name="package_img_width_110">110dp</dimen>
+    <dimen name="package_img_height_110">110dp</dimen>
+    <dimen name="currency_img_width_135">135dp</dimen>
+    <dimen name="currency_img_height_48">48dp</dimen>
+    <dimen name="frg5_text_32">32sp</dimen>
+    <dimen name="frg5_text_22">22sp</dimen>
+    <!--==========================================================================-->
+    <!--SEARCH-->
+    <dimen name="earth_width_400">400dp</dimen>
+    <dimen name="earth_height_400">400dp</dimen>
+    <dimen name="search_width_150">150dp</dimen>
+    <dimen name="search_height_150">150dp</dimen>
+    <dimen name="search_button_cancel_width_300">300dp</dimen>
+    <dimen name="search_button_cancel_height_100">100dp</dimen>
+    <dimen name="distance_earth_button_300">300dp</dimen>
+    <dimen name="search_text_36">36sp</dimen>
+    <!--====================================================================-->
+    <!--BATTLE-->
+    <dimen name="battle_margin_2">2dp</dimen>
+    <dimen name="battle_margin_4">4dp</dimen>
+    <dimen name="battle_margin_8">8dp</dimen>
+    <dimen name="battle_margin_16">16dp</dimen>
+    <dimen name="battle_margin_24">24dp</dimen>
+    <dimen name="battle_margin_32">32dp</dimen>
+    <dimen name="battle_margin_40">40dp</dimen>
+    <dimen name="battle_margin_64">64dp</dimen>
+    <dimen name="battle_margin_150">150dp</dimen>
+    <dimen name="battle_margin_bottom_20">20dp</dimen>
+    <dimen name="battle_margin_top_50">50dp</dimen>
+    <dimen name="battle_flag_width_40">40dp</dimen>
+    <dimen name="battle_flag_height_60">60dp</dimen>
+    <dimen name="battle_vs_width_400">400dp</dimen>
+    <dimen name="battle_vs_height_200">200dp</dimen>
+    <dimen name="battle_text_star_vs_width_110">110dp</dimen>
+    <dimen name="battle_text_star_vs_height_50">50dp</dimen>
+    <dimen name="battle_flag_vs_width_70">70dp</dimen>
+    <dimen name="battle_flag_vs_height_50">50dp</dimen>
+    <dimen name="battle_star_vs_width_50">50dp</dimen>
+    <dimen name="battle_star_vs_height_50">50dp</dimen>
+    <dimen name="battle_img_vs_width_150">150dp</dimen>
+    <dimen name="battle_img_vs_height_150">150dp</dimen>
+    <dimen name="battle_text_name_vs_width_250">250dp</dimen>
+    <dimen name="battle_text_name_vs_height_50">50dp</dimen>
+    <dimen name="battle_match_over_width_300">0dp</dimen>
+    <dimen name="battle_match_over_height_300">300dp</dimen>
+    <dimen name="battle_frame_match_over_width_0">300dp</dimen>
+    <dimen name="battle_frame_match_over_height_200">200dp</dimen>
+    <dimen name="battle_distance_button_match_over_150">150dp</dimen>
+    <dimen name="battle_img_rps_width_100">100dp</dimen>
+    <dimen name="battle_img_rps_height_100">100dp</dimen>
+    <dimen name="battle_button_icon_width_100">100dp</dimen>
+    <dimen name="battle_button_icon_height_100">100dp</dimen>
+    <dimen name="battle_button_bubble_width_100">100dp</dimen>
+    <dimen name="battle_button_bubble_height_100">100dp</dimen>
+    <dimen name="battle_button_close_icon_width_32">32dp</dimen>
+    <dimen name="battle_button_close_icon_height_32">32dp</dimen>
+    <dimen name="battle_icon_table_width_80">80dp</dimen>
+    <dimen name="battle_icon_table_height_80">80dp</dimen>
+    <dimen name="battle_no_wifi_width_60">60dp</dimen>
+    <dimen name="battle_no_wifi_height_60">60dp</dimen>
+    <dimen name="battle_star_life_width_30">30dp</dimen>
+    <dimen name="battle_star_life_height_30">30dp</dimen>
+    <dimen name="battle_button_rps_width_100">100dp</dimen>
+    <dimen name="battle_button_rps_height_40">40dp</dimen>
+    <dimen name="battle_button_again_width_70">70dp</dimen>
+    <dimen name="battle_button_again_height_70">70dp</dimen>
+    <dimen name="battle_text_24">24sp</dimen>
+    <dimen name="battle_text_28">28sp</dimen>
+    <dimen name="battle_text_36">36sp</dimen>
+    <dimen name="battle_text_40">40sp</dimen>
+    <dimen name="battle_text_64">64sp</dimen>
+    <!--==================================================================-->
+
+</resources>

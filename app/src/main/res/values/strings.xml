@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">RPS Online</string>
+    <string name="last_version">Please update to the lasted version.</string>
+    <string name="update">Update</string>
+    <string name="no">No</string>
+    <string name="no_connect">No internet connection</string>
+    <string name="check">Check</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="nickName">Nickname</string>
+    <string name="address">Address</string>
+    <string name="no_input">Please input</string>
+    <string name="invalid_nickname">Invalid nickName</string>
+    <string name="exist_nickname">Nickname exist.</string>
+    <string name="match_over">Match over</string>
+    <string name="visitor">Visitor</string>
+    <string name="home">Home</string>
+    <string name="again">Do you want to play again?</string>
+    <string name="invite">Message has been sent.</string>
+    <string name="left">Opponent has left the room.</string>
+    <string name="not_life">Your life is not enough.</string>
+    <string name="fight">Fight</string>
+    <string name="profile">Profile</string>
+    <string name="win">Wins:</string>
+    <string name="lost">Losts:</string>
+    <string name="star">Stars:</string>
+    <string name="life">Lifes:</string>
+    <string name="wheel">Wheels:</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="you_have">You have</string>
+    <string name="swap">swaps</string>
+    <string name="chat">Chat</string>
+    <string name="local">Local</string>
+    <string name="global">Global</string>
+    <string name="unknown">Unknown</string>
+    <string name="facebook">Share</string>
+    <string name="sound_on">Turn off</string>
+    <string name="sound_off">Turn on</string>
+    <string name="help">Help</string>
+    <string name="info">Info</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="exit">Are you sure want to exit?</string>
+    <string name="connect_fail">Can not connect to the server.</string>
+    <string name="search_fail">Opponent are not found.</string>
+</resources>

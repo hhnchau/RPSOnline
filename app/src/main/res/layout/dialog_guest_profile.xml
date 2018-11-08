@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_dialog_profile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/frg3_margin_main_64"
+    android:paddingRight="@dimen/frg3_margin_main_64"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frg3_panel_profile_height_600"
+        android:layout_marginTop="@dimen/frg3_margin_48"
+        android:background="@drawable/panel_guest"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frg3_margin_32"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/frg3_margin_32"
+                android:layout_marginTop="@dimen/frg3_margin_32"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:layout_margin="@dimen/frg3_margin_2"
+                    android:background="@drawable/bg_row_item"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/frg3_icon_width_40"
+                        android:layout_height="@dimen/frg3_icon_height_40"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:id="@+id/textView_name_visitor"
+                        android:layout_width="@dimen/frg3_text_profile_width_200"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/frg3_text_28"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:layout_margin="@dimen/frg3_margin_2"
+                    android:background="@drawable/bg_row_item"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/frg3_icon_width_40"
+                        android:layout_height="@dimen/frg3_icon_height_40"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView_location_visitor"
+                        android:layout_width="@dimen/frg3_text_profile_width_200"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/frg3_text_24"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_star_height_50"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/frg3_margin_32"
+                android:layout_marginTop="@dimen/frg3_margin_16"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_star_visitor"
+                    android:layout_width="@dimen/frg3_text_distance_star_80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLength="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_star_width_50"
+                    android:layout_height="@dimen/frg3_icon_star_height_50"
+                    android:src="@drawable/starts" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/frg3_margin_32"
+            android:layout_marginTop="@dimen/frg3_margin_32"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_height_40"
+                android:layout_margin="@dimen/frg3_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/icon_1" />
+
+                <TextView
+                    android:id="@+id/textView_win_visitor"
+                    android:layout_width="@dimen/frg3_text_profile_width_200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_height_40"
+                android:layout_margin="@dimen/frg3_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/icon_7" />
+
+                <TextView
+                    android:id="@+id/textView_lost_visitor"
+                    android:layout_width="@dimen/frg3_text_profile_width_200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_height_40"
+                android:layout_margin="@dimen/frg3_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/starts" />
+
+                <TextView
+                    android:id="@+id/textView_star1_visitor"
+                    android:layout_width="@dimen/frg3_text_profile_width_200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_height_40"
+                android:layout_margin="@dimen/frg3_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/lifes" />
+
+                <TextView
+                    android:id="@+id/textView_life_visitor"
+                    android:layout_width="@dimen/frg3_text_profile_width_200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frg3_icon_height_40"
+                android:layout_margin="@dimen/frg3_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/package_4" />
+
+                <TextView
+                    android:id="@+id/textView_wheel_visitor"
+                    android:layout_width="@dimen/frg3_text_profile_width_200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/frg3_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_position_visitor"
+                android:layout_width="@dimen/frg3_img_position_width_100"
+                android:layout_height="@dimen/frg3_img_position_height_100"
+                android:layout_margin="@dimen/frg3_margin_32"
+                android:background="@drawable/position"
+                android:gravity="center"
+                android:padding="@dimen/frg3_margin_4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/frg3_text_36"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/robbin_height_117"
+        android:background="@drawable/robbin"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView_robbin_profile_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/frg3_margin_bottom_robbin_20"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/frg3_text_40"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listView_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5sp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="50dp"
+        android:paddingLeft="@dimen/frg1_margin_64"
+        android:paddingRight="@dimen/frg1_margin_64"
+        android:paddingTop="@dimen/menu_icon_height_72"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/frg1_margin_bottom_2">
+
+        <LinearLayout
+            android:id="@+id/ln_my_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/frg1_margin_bottom_10">
+
+            <include
+                android:id="@+id/my_button"
+                layout="@layout/my_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/frg1_margin_64"
+            android:paddingRight="@dimen/frg1_margin_64"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edittext_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg1_btn_send_height_40"
+                android:layout_marginLeft="@dimen/frg1_margin_4"
+                android:layout_weight="1"
+                android:background="@drawable/bg_row_item"
+                android:hint="input text" />
+
+            <LinearLayout
+                android:layout_width="@dimen/frg1_btn_send_width_40"
+                android:layout_height="@dimen/frg1_btn_send_height_40"
+                android:layout_marginLeft="@dimen/frg1_margin_4"
+                android:background="@drawable/bg_row_item">
+
+                <Button
+                    android:id="@+id/button_send"
+                    android:layout_width="@dimen/frg1_btn_send_width_40"
+                    android:layout_height="@dimen/frg1_btn_send_height_40"
+                    android:background="@drawable/send" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

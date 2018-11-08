@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/my_title_tabStrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_icon_tabStrip"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/my_icon_tabStrip"
+        android:layout_width="@dimen/tab_img_width_62"
+        android:layout_height="@dimen/tab_img_height_62"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tab_margin_8"
+        android:gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/badge"
+        android:layout_width="@dimen/bage_height"
+        android:layout_height="@dimen/bage_height"
+        android:layout_toRightOf="@+id/my_icon_tabStrip"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tab_text_12" />
+</RelativeLayout>

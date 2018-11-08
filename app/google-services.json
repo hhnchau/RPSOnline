@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "676808008393",
+    "firebase_url": "https://rockpaperscissorsonline-80b6a.firebaseio.com",
+    "project_id": "rockpaperscissorsonline-80b6a",
+    "storage_bucket": "rockpaperscissorsonline-80b6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676808008393:android:833cd07f0cfa8099",
+        "android_client_info": {
+          "package_name": "info.kingpes.rockpaperscissorsonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676808008393-q7bdv2qj4jpag27md023t68m3105hqq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVzG_yO1XXkftDvBT0rLNOG3sEhAiyd_4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

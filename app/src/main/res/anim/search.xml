@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:repeatMode="reverse">
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:toXDelta="120%"
+        android:toYDelta="0%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="3000"
+        android:toXDelta="-120%"
+        android:toYDelta="3%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="6000"
+        android:toXDelta="150%"
+        android:toYDelta="6%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="9000"
+        android:toXDelta="-160%"
+        android:toYDelta="9%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="12000"
+        android:toXDelta="170%"
+        android:toYDelta="10%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="15000"
+        android:toXDelta="-180%"
+        android:toYDelta="12%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="18000"
+        android:toXDelta="180%"
+        android:toYDelta="14%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="21000"
+        android:toXDelta="-180%"
+        android:toYDelta="15%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="24000"
+        android:toXDelta="150%"
+        android:toYDelta="16%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="27000"
+        android:toXDelta="-120%"
+        android:toYDelta="17%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="30000"
+        android:toXDelta="100%"
+        android:toYDelta="18%" />
+
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="33000"
+        android:toXDelta="-100%"
+        android:toYDelta="19%" />
+    <translate
+        android:duration="3000"
+        android:fromXDelta="0%"
+        android:fromYDelta="0%"
+        android:startOffset="36000"
+        android:toXDelta="100%"
+        android:toYDelta="20%" />
+
+</set>

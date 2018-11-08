@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linnear_row_rank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:orientation="horizontal"
+    android:padding="@dimen/frg2_margin_8">
+
+    <TextView
+        android:id="@+id/textView_award_position"
+        android:layout_width="@dimen/frg2_position_width_70"
+        android:layout_height="@dimen/frg2_position_height_50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/frg2_text_32"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/frg2_margin_8"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_award_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#503719"
+            android:textSize="@dimen/frg2_text_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_award_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/frg2_text_24"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_row_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_award_star"
+            android:layout_width="@dimen/frg2_text_star_width_60"
+            android:layout_height="@dimen/frg2_text_star_height_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLength="5"
+            android:textColor="#e9e1d4"
+            android:textSize="@dimen/frg2_text_24"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/frg2_img_star_width_50"
+            android:layout_height="@dimen/frg2_img_star_height_50"
+            android:src="@drawable/starts" />
+    </LinearLayout>
+</LinearLayout>

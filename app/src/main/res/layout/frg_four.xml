@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menu_icon_height_72"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_my_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/frg4_margin_2"
+            android:background="@drawable/bg_row_item"
+            android:textColor="@color/white"
+            android:textSize="@dimen/frg4_text_32"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/wheels_width_32"
+                android:layout_height="@dimen/wheels_height_47"
+                android:src="@drawable/wheels" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_wheel"
+            android:layout_width="@dimen/wheel_width_500"
+            android:layout_height="@dimen/wheel_height_500"
+            android:src="@drawable/wheel" />
+
+        <Button
+            android:id="@+id/button_swap"
+            android:layout_width="@dimen/frg4_button_start_width_300"
+            android:layout_height="@dimen/frg4_button_start_height_100"
+            android:layout_marginTop="@dimen/frg4_margin_top_30"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/frg4_text_36"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/frg4_text_46"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView_wheel_life"
+        android:layout_width="@dimen/frg4_life_width_40"
+        android:layout_height="@dimen/frg4_life_height_40"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lifes"
+        android:visibility="invisible" />
+
+</RelativeLayout>

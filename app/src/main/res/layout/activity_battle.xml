@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_battle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <!--Background 1-->
+    <LinearLayout
+        android:id="@+id/linnear_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/panel_guest">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/panel_home" />
+    </LinearLayout>
+
+    <!--Background 2-->
+    <LinearLayout
+        android:id="@+id/linnear_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50123123"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <!--FlagWin-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/battle_margin_32"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/flag_1"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_2"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_3"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:layout_marginBottom="@dimen/battle_margin_32"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_4"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:layout_marginTop="@dimen/battle_margin_32"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_5"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_6"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_7"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/flag_8"
+            android:layout_width="@dimen/battle_flag_width_40"
+            android:layout_height="@dimen/battle_flag_height_60"
+            android:scaleType="center" />
+
+    </LinearLayout>
+
+    <!--VS-->
+    <LinearLayout
+        android:id="@+id/linnear_vs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/battle_margin_32"
+            android:layout_marginRight="@dimen/battle_margin_32"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/battle_vs_height_200"
+                android:layout_marginTop="@dimen/battle_margin_top_50"
+                android:background="@drawable/panel_guest"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/battle_margin_32"
+                    android:layout_marginRight="@dimen/battle_margin_32"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/imageView_flag_national_visitor"
+                        android:layout_width="@dimen/battle_flag_vs_width_70"
+                        android:layout_height="@dimen/battle_flag_vs_height_50"
+                        android:layout_weight="1"
+                        android:src="@drawable/avatar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_name_guest"
+                            android:layout_width="@dimen/battle_text_name_vs_width_250"
+                            android:layout_height="wrap_content"
+                            android:maxLength="12"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/battle_text_36"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_location_guest"
+                            android:layout_width="@dimen/battle_text_name_vs_width_250"
+                            android:layout_height="wrap_content"
+                            android:maxLength="12"
+                            android:textSize="@dimen/battle_text_28"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_star_guest"
+                            android:layout_width="@dimen/battle_text_star_vs_width_110"
+                            android:layout_height="@dimen/battle_text_star_vs_height_50"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="#123"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:textColor="#ff0"
+                            android:textSize="@dimen/battle_text_36"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/battle_star_vs_width_50"
+                            android:layout_height="@dimen/battle_star_vs_height_50"
+                            android:gravity="center"
+                            android:src="@drawable/starts" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/robbin_height_117"
+                android:background="@drawable/robbin"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_robbin_vs_visitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/battle_margin_bottom_20"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/textView_vs"
+            android:layout_width="@dimen/battle_img_vs_width_150"
+            android:layout_height="@dimen/battle_img_vs_height_150"
+            android:src="@drawable/vs" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/battle_margin_32"
+            android:layout_marginRight="@dimen/battle_margin_32"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/battle_vs_height_200"
+                android:layout_marginTop="@dimen/battle_margin_top_50"
+                android:background="@drawable/panel_guest"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/battle_margin_32"
+                    android:layout_marginRight="@dimen/battle_margin_32"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/imageView_flag_national_home"
+                        android:layout_width="@dimen/battle_flag_vs_width_70"
+                        android:layout_height="@dimen/battle_flag_vs_height_50"
+                        android:layout_weight="1"
+                        android:src="@drawable/avatar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_name_home"
+                            android:layout_width="@dimen/battle_text_name_vs_width_250"
+                            android:layout_height="wrap_content"
+                            android:maxLength="12"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/battle_text_36"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_location_home"
+                            android:layout_width="@dimen/battle_text_name_vs_width_250"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/battle_text_28"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView_star_home"
+                        android:layout_width="@dimen/battle_text_star_vs_width_110"
+                        android:layout_height="@dimen/battle_text_star_vs_height_50"
+                        android:layout_weight="1"
+                        android:background="#123"
+                        android:gravity="center"
+                        android:maxLength="5"
+                        android:textColor="#ff0"
+                        android:textSize="@dimen/battle_text_36"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/battle_star_vs_width_50"
+                        android:layout_height="@dimen/battle_star_vs_height_50"
+                        android:gravity="center"
+                        android:src="@drawable/starts" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/robbin_height_117"
+                android:background="@drawable/robbin"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_robbin_vs_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/battle_margin_bottom_20"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Match Over-->
+    <LinearLayout
+        android:id="@+id/linnear_gameover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/battle_match_over_height_300"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/battle_margin_32"
+            android:layout_marginRight="@dimen/battle_margin_32"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/battle_frame_match_over_height_200"
+                android:layout_marginTop="@dimen/menu_icon_height_72"
+                android:background="@drawable/panel_guest"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_match_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_64"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/robbin_height_117"
+                android:background="@drawable/robbin"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_robbin_match_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/battle_margin_bottom_20"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_again"
+                    android:layout_width="@dimen/battle_button_again_height_70"
+                    android:layout_height="@dimen/battle_button_again_height_70"
+                    android:background="@drawable/button_again" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/battle_distance_button_match_over_150"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button_next"
+                    android:layout_width="@dimen/battle_button_again_height_70"
+                    android:layout_height="@dimen/battle_button_again_height_70"
+                    android:background="@drawable/button_next" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--TextView Ready-->
+    <TextView
+        android:id="@+id/textView_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_text_64"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!--Unknown Guest-->
+    <ImageView
+        android:id="@+id/imageView_unknown_guest"
+        android:layout_width="@dimen/battle_img_rps_width_100"
+        android:layout_height="@dimen/battle_img_rps_height_100"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <!--Unknown Home-->
+    <ImageView
+        android:id="@+id/imageView_unknown_home"
+        android:layout_width="@dimen/battle_img_rps_width_100"
+        android:layout_height="@dimen/battle_img_rps_height_100"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <!--Icon Home-->
+    <ImageView
+        android:id="@+id/imageView_icon_home"
+        android:layout_width="@dimen/battle_button_icon_width_100"
+        android:layout_height="@dimen/battle_button_icon_height_100"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <!--Icon_Guest-->
+    <ImageView
+        android:id="@+id/imageView_icon_guest"
+        android:layout_width="@dimen/battle_button_icon_width_100"
+        android:layout_height="@dimen/battle_button_icon_height_100"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <!--RPS-->
+    <LinearLayout
+        android:id="@+id/linnear_rps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView_show_icon"
+            android:layout_width="@dimen/battle_button_bubble_width_100"
+            android:layout_height="@dimen/battle_button_bubble_height_100"
+            android:layout_marginLeft="@dimen/battle_margin_32"
+            android:src="@drawable/bubble_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/battle_margin_24"
+            android:layout_marginRight="@dimen/battle_margin_24"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_rock"
+                android:layout_width="@dimen/battle_img_rps_width_100"
+                android:layout_height="@dimen/battle_img_rps_height_100"
+                android:layout_margin="@dimen/battle_margin_16"
+                android:src="@drawable/rock_green" />
+
+            <ImageView
+                android:id="@+id/imageView_paper"
+                android:layout_width="@dimen/battle_img_rps_width_100"
+                android:layout_height="@dimen/battle_img_rps_height_100"
+                android:layout_margin="@dimen/battle_margin_16"
+                android:src="@drawable/paper_green" />
+
+            <ImageView
+                android:id="@+id/imageView_scrissor"
+                android:layout_width="@dimen/battle_img_rps_width_100"
+                android:layout_height="@dimen/battle_img_rps_height_100"
+                android:layout_margin="@dimen/battle_margin_16"
+                android:src="@drawable/scrissror_green" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Icon-->
+    <LinearLayout
+        android:id="@+id/linnear_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/battle_margin_40"
+        android:layout_marginRight="@dimen/battle_margin_40"
+        android:background="@drawable/custom_rounded_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_icon_close"
+            android:layout_width="@dimen/battle_button_close_icon_width_32"
+            android:layout_height="@dimen/battle_button_close_icon_height_32"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/battle_margin_8"
+            android:layout_marginTop="@dimen/battle_margin_8"
+            android:background="@drawable/button_close" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/battle_margin_24"
+            android:layout_marginLeft="@dimen/battle_margin_24"
+            android:layout_marginRight="@dimen/battle_margin_24"
+            android:layout_marginTop="@dimen/battle_margin_8"
+            android:background="@drawable/custom_rounded_dialog_body">
+
+            <TableRow android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_1"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_1" />
+
+                <ImageView
+                    android:id="@+id/icon_2"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_2" />
+
+                <ImageView
+                    android:id="@+id/icon_3"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_3" />
+
+                <ImageView
+                    android:id="@+id/icon_4"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_4" />
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_5"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_5" />
+
+                <ImageView
+                    android:id="@+id/icon_6"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_6" />
+
+                <ImageView
+                    android:id="@+id/icon_7"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_7" />
+
+                <ImageView
+                    android:id="@+id/icon_8"
+                    android:layout_width="@dimen/battle_icon_table_width_80"
+                    android:layout_height="@dimen/battle_icon_table_height_80"
+                    android:layout_margin="@dimen/battle_margin_8"
+                    android:src="@drawable/icon_8" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <!--ProgressBar-->
+    <LinearLayout
+        android:id="@+id/linnear_circular_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_icon_home"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/battle_margin_64"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/battle_text_64"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--Profile Guest-->
+    <LinearLayout
+        android:id="@+id/linnear_profile_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/battle_margin_150"
+        android:layout_marginRight="@dimen/battle_margin_150"
+        android:layout_marginTop="@dimen/battle_margin_32"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/battle_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/textView_guest_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/battle_margin_2"
+                android:background="@drawable/bg_row_item"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/frg3_icon_width_40"
+                    android:layout_height="@dimen/frg3_icon_height_40"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/textView_guest_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_signal_wifi"
+            android:layout_width="@dimen/battle_no_wifi_width_60"
+            android:layout_height="@dimen/battle_no_wifi_height_60"
+            android:layout_marginTop="@dimen/battle_margin_64"
+            android:src="@drawable/no_wifi"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!--Profile Star Life-->
+    <LinearLayout
+        android:id="@+id/linnear_star_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/battle_margin_32"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/battle_margin_40"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/battle_star_life_width_30"
+                    android:layout_height="@dimen/battle_star_life_height_30"
+                    android:src="@drawable/lifes" />
+
+                <TextView
+                    android:id="@+id/textView_visitor_life"
+                    android:layout_width="@dimen/battle_star_life_width_30"
+                    android:layout_height="@dimen/battle_star_life_height_30"
+                    android:layout_marginLeft="@dimen/battle_margin_8"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/battle_star_life_width_30"
+                    android:layout_height="@dimen/battle_star_life_height_30"
+                    android:src="@drawable/starts" />
+
+                <TextView
+                    android:id="@+id/textView_visitor_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/battle_margin_8"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/battle_star_life_width_30"
+                    android:layout_height="@dimen/battle_star_life_height_30"
+                    android:src="@drawable/starts" />
+
+                <TextView
+                    android:id="@+id/textView_home_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/battle_margin_8"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/battle_star_life_width_30"
+                    android:layout_height="@dimen/battle_star_life_height_30"
+                    android:src="@drawable/lifes" />
+
+                <TextView
+                    android:id="@+id/textView_home_life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/battle_margin_8"
+                    android:textSize="@dimen/battle_text_28"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Button RPS-->
+    <LinearLayout
+        android:id="@+id/linnear_button_rps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linnear_rps"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_marginRight="@dimen/battle_margin_4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_rock"
+            android:layout_width="@dimen/battle_button_rps_width_100"
+            android:layout_height="@dimen/battle_button_rps_height_40"
+            android:layout_marginLeft="@dimen/battle_margin_16"
+            android:layout_marginRight="@dimen/battle_margin_16"
+            android:background="@drawable/button_green"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_paper"
+            android:layout_width="@dimen/battle_button_rps_width_100"
+            android:layout_height="@dimen/battle_button_rps_height_40"
+            android:layout_marginLeft="@dimen/battle_margin_16"
+            android:layout_marginRight="@dimen/battle_margin_16"
+            android:background="@drawable/button_green"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_scissor"
+            android:layout_width="@dimen/battle_button_rps_width_100"
+            android:layout_height="@dimen/battle_button_rps_height_40"
+            android:layout_marginLeft="@dimen/battle_margin_16"
+            android:layout_marginRight="@dimen/battle_margin_16"
+            android:background="@drawable/button_green"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linnear_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/menu_margin_8"
+    android:layout_marginRight="@dimen/menu_margin_8"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linnear_star"
+        android:layout_width="@dimen/menu_icon_width_200"
+        android:layout_height="@dimen/menu_icon_height_72"
+        android:background="@drawable/start"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView_star"
+            android:layout_width="@dimen/menu_text_width_80"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:maxLength="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text_28"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/button_setting"
+            android:layout_width="@dimen/menu_button_add_life_width_40"
+            android:layout_height="@dimen/menu_button_add_life_height_40"
+            android:src="@drawable/button_setting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linnear_life"
+        android:layout_width="@dimen/menu_icon_width_200"
+        android:layout_height="@dimen/menu_icon_height_72"
+        android:background="@drawable/life"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView_life"
+            android:layout_width="@dimen/menu_text_width_80"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:maxLength="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text_28"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/button_add_life"
+            android:layout_width="@dimen/menu_button_add_life_width_40"
+            android:layout_height="@dimen/menu_button_add_life_height_40"
+            android:src="@drawable/button_buy_lifes" />
+
+    </LinearLayout>
+</LinearLayout>

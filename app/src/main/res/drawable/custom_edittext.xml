@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Set mau nen -->
+    <solid android:color="@color/transparent" />
+
+    <!--thuoc tinh mau va do rong cua duong vien-->
+    <stroke android:width="3dp"
+        android:color="#fff" />
+
+    <!--Can chinh vi tri-->
+    <padding
+        android:bottom="1dp"
+        android:top="1dp"
+        android:right="1dp"
+        android:left="1dp"/>
+
+    <!--Ban kinh duong tron o ban goc-->
+    <corners android:radius="8dp"/>
+</shape>

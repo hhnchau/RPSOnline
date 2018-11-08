@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView_earth"
+            android:layout_width="@dimen/earth_width_400"
+            android:layout_height="@dimen/earth_height_400"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/earth" />
+
+        <RelativeLayout
+            android:id="@+id/linnear_button"
+            android:layout_width="@dimen/distance_earth_button_300"
+            android:layout_height="@dimen/distance_earth_button_300"
+            android:layout_below="@+id/imageView_earth"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="@dimen/search_button_cancel_width_300"
+                android:layout_height="@dimen/search_button_cancel_height_100"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_yellow"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/search_text_36"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_search"
+            android:layout_width="@dimen/search_width_150"
+            android:layout_height="@dimen/search_height_150"
+            android:layout_alignLeft="@+id/imageView_earth"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView_earth"
+            android:src="@drawable/search" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_progressbar_30"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp">
+
+        <ProgressBar
+            android:id="@+id/progressbar_search"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_progressbar_30"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="10"
+            android:progressDrawable="@drawable/custom_progesbar"
+            android:secondaryProgress="1" />
+
+        <TextView
+            android:id="@+id/textView_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/progressbar_text_24"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
